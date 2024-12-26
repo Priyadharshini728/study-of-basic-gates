@@ -1,5 +1,5 @@
-### study-of-basic-gates
-
+## EX-01 Study-of-basic-gates
+## DATE: 28-09-2024
 **AIM:** 
 
 To study and verify the truth table of logic gates in Quartus II using Verilog programming.
@@ -64,16 +64,44 @@ Y= A⊕B
 
 **PROGRAM**
 
+ module Basic (a, b, y1, y2, y3, y4, y5, y6, y7) ;
+
+ input a, b;
+
+ output yl, y2, y3, y4, y5, у6, y7;
+
+ and (yl, a, b) ;
+
+ or (y2, a, b) ;
+
+ not (y3,a) ;
+
+ xor (y4, a, b) ;
+
+ nor (y5, a, b) ;
+
+ nand (y6, a, b) ;
+
+ nor (y7, a, b) ;
+
+ endmodule 
+
 Program for logic gates and verify its truth table in quartus using Verilog programming
 
- Developed by: RegisterNumber: 
+## Developed by:PRIYADHARSHINI P RegisterNumber: 24901256
  
 **Logic symbol & Truthtable**
 
+![image](https://github.com/user-attachments/assets/1c091aee-f658-49e1-ba22-801e5dfe40bf)
+
+
 **RTL realization Output:** 
 
+![Screenshot 2024-12-26 191057](https://github.com/user-attachments/assets/fe2a573a-2891-409c-a128-62f37e4de1f8)
+
 **RTL**
+![image](https://github.com/user-attachments/assets/3cc49cdf-35fd-440a-8ee6-40b1a0f77571)
 
 **Result:**
-
+Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
 
