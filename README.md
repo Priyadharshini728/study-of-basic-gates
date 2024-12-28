@@ -64,31 +64,35 @@ Y= A⊕B
 
 **PROGRAM**
 
- module Basic (a, b, y1, y2, y3, y4, y5, y6, y7) ;
+~~~
+module LogicGates1(a,b,c);
 
- input a, b;
+input a;
 
- output yl, y2, y3, y4, y5, у6, y7;
+input b;
 
- and (yl, a, b) ;
+output [6:0] c;
 
- or (y2, a, b) ;
+assign c[0]=a&b;
 
- not (y3,a) ;
+assign c[1]=a|b;
 
- xor (y4, a, b) ;
+assign c[2]=~(a&b);
 
- nor (y5, a, b) ;
+assign c[3]=~(a|b);
 
- nand (y6, a, b) ;
+assign c[4]=a^b;
 
- nor (y7, a, b) ;
+assign c[5]=~(a^b);
 
- endmodule 
+assign c[6]=~a;
+
+endmodule
+~~~
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
 
-## Developed by:PRIYADHARSHINI P RegisterNumber: 24901256
+## Developed by:PRIYADHARSHINI P   RegisterNumber: 24901256
  
 **Logic symbol & Truthtable**
 
